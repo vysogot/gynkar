@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,384 +9,316 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
     <link rel="shortcut icon" href="favicon.ico" />
 
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- Custom styles for this template -->
     <link href="css/half-slider.css" rel="stylesheet">
     <link href="css/infinite-slider.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" type="text/css" media="screen" href="youtube-video-player/packages/icons/css/icons.min.css" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" media="screen" href="youtube-video-player/css/youtube-video-player.min.css" />
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <!-- Main Javascript -->
+    <script type="text/javascript" src="youtube-video-player/js/youtube-video-player.jquery.min.js"></script>
+
+    <!-- Perfect Scrollbar -->
+    <link rel="stylesheet" type="text/css" media="screen" href="youtube-video-player/packages/perfect-scrollbar/perfect-scrollbar.css" />
+    <script type="text/javascript" src="youtube-video-player/packages/perfect-scrollbar/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="youtube-video-player/packages/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="js/easy.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
     <title>Produkcja filmowa | Gynkar</title>
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Gynkar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+
+    <style>
+        html { background: white url('css/ajax-loader.gif') center 10% no-repeat; }
+        body { visibility: hidden; }
+    </style>
+</head>
+
+<body id="home">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm px-4 p-3 mb-3">
+            <a class="navbar-brand" href="#"><img src="assets/images/logo.png" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto pr-5">
+                    <li class="nav-item active">
+                        <a class="nav-link js-scroll-trigger" href="#home">Home
                 <span class="sr-only">(current)</span>
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#block-views-klienci-o-nas-block">Nasi klienci</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#main-wrapper">Produkcja filmowa</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#block-views-klienci-o-nas-block-1">Nasze produkcje</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#block-views-contact-block">Kontakt</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#o-nas">O nas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#nasze-produkcje">Nasze produkcje</a>
+                    </li>
 
-     <header>
-      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white shadow-sm px-4 p-3 mb-3">
-        <a class="navbar-brand" href="#"><img src="assets/images/logo.png" /></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto pr-5">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#block-views-klienci-o-nas-block">Nasi klienci</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#main-wrapper">Produkcja filmowa</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#block-views-klienci-o-nas-block-1">Nasze produkcje</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#block-views-contact-block">Kontakt</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#nasi-klienci">Nasi klienci</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#kontakt">Kontakt</a>
+                    </li>
+                    <li class="nav-icon nav-icon-fb">
+                        <a href="https://www.facebook.com/gynkar.michal.lojewski/" target="_blank" class="btn btn-social-icon btn-sm btn-facebook gs" style="margin-right: 10px"><span class="fa fa-facebook"></span></a>
+                        <a href="https://www.instagram.com/gynkar/" target="_blank" class="btn btn-social-icon btn-sm btn-instagram gs"><span class="fa fa-instagram"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main role="main">
 
-      <div class="header">
-      <div class="overlay"></div>
-  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
-  </video>
-  <div class="container h-100">
-    <div class="d-flex text-center h-100">
-      <div class="my-auto w-100 text-white">
-        <h1 class="display-4">Produkcja Filmowa</h1>
+        <div class="header">
+            <!--<div class="overlay"></div>-->
+            <div class="video-container2">
 
-      </div>
-    </div>
-
-  </div>
-
-</div>
-
-      <!--<div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="first-slide" src="assets/images/banner1.jpg" alt="First slide">
-            <div class="container">
-              <div class="carousel-caption text-center">
-                <h1>Produkcja Filmowa</h1>
-                <p class="text-light">Usługi w zakresie produkcji filmowej oraz kompleksowej organizacji imprez.</p>
-                <p><a class="btn btn-lg btn-primary" href="#kontakt" role="button">Kontakt</a></p>
-              </div>
+            <video playsinline="playsinline" controls autoplay="autoplay" muted="muted" loop="loop">
+                <source src="./assets/filmik.mp4" type="video/mp4">
+            </video>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img class="second-slide" src="assets/images/banner2.jpg" alt="Second slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Ponad 20 lat na rynku</h1>
-                <p class="text-light">Doświadczenie
-i baza najlepszych podwykonawców
-z kraju i zagranicy – realizujemy koncertowo nawet najbardziej
-nieoczekiwane wyzwania.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Zobacz</a></p>
-              </div>
+            <div class="container h-100">
+                <div class="d-flex text-center h-100">
+                    <div class="my-auto w-100 text-white">
+                        <!--<h1 class="display-4">Produkcja Filmowa</h1>-->
+
+                    </div>
+                </div>
+
             </div>
-          </div>
-          <div class="carousel-item">
-            <img class="third-slide" src="assets/images/banner3.jpg" alt="Third slide">
-            <div class="container">
-              <div class="carousel-caption text-center">
-                <h1>Michał Łojewski</h1>
-                <p class="text-light">Założyciel
-i właściciel firmy Gynkar. Wiele lat pracy w kinematografii, sieciowych Agencjach
-Reklamowych i Marketingu.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Więcej</a></p>
-              </div>
+
+        </div>
+
+        <div class="container marketing" id="o-nas">
+
+            <!-- START THE FEATURETTES -->
+
+            <div class="row featurette">
+
+                <div class="col-md-7">
+                    <h2 class="featurette-heading" id="o-nas">Działamy od <span class="text-muted">ponad 20 lat</span></h2>
+                    <p class="lead">
+
+                        Pracujemy dla klientów polskich i zagranicznych. Prowadzimy usługi w zakresie produkcji filmowej oraz kompleksowej organizacji imprez.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <div class="module-slider">
+                        <div><img class="featurette-image img-fluid mx-auto" src="assets/images/case1.jpg" alt="Generic placeholder image"></div>
+                        <div><img class="featurette-image img-fluid mx-auto" src="assets/images/case4.jpg" alt="Generic placeholder image"></div>
+                        <div><img class="featurette-image img-fluid mx-auto" src="assets/images/case3.jpg" alt="Generic placeholder image"></div>
+                        <div><img class="featurette-image img-fluid mx-auto" src="assets/images/case2.jpg" alt="Generic placeholder image"></div>
+                    </div>
+                </div>
             </div>
-          </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">+ <span class="text-muted">2000 realizacji</span></h2>
+                    <p class="lead">Reklamy, relacje filmowe, filmy szkoleniowe, prezentacje multimedialne, filmiki internetowe i inne. Baza najlepszych podwykonawców z kraju i zagranicy.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <div class="module-slider">
+                        <div><img class="featurette-image img-fluid mx-auto" src="assets/images/case2.jpg" alt="Generic placeholder image"></div>
+                        <div><img class="featurette-image img-fluid mx-auto" src="assets/images/case1.jpg" alt="Generic placeholder image"></div>
+                        <div><img class="featurette-image img-fluid mx-auto" src="assets/images/case3.jpg" alt="Generic placeholder image"></div>
+                        <div><img class="featurette-image img-fluid mx-auto" src="assets/images/case4.jpg" alt="Generic placeholder image"></div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
         </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>-->
+        <!-- /.container -->
 
+        <div class="container mb-5 text-center" id="nasze-produkcje">
+            <h2 class="text-center mb-5 featurette-heading">Nasze <span class="text-muted">produkcje</span></h2>
+            <div class="video-container">
 
-      <div class="container marketing">
-
-
-
-        <!-- START THE FEATURETTES -->
-
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-
-          <div class="col-md-7">
-            <h2 class="featurette-heading">Działamy od <span class="text-muted">ponad 20 lat</span></h2>
-            <p class="lead">
-
-Pracujemy dla klientów polskich i zagranicznych. Prowadzimy usługi w zakresie produkcji filmowej oraz kompleksowej organizacji imprez.</p>
-          </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="assets/images/case1.jpg" alt="Generic placeholder image">
-          </div>
+                <div id="playlist"></div>
+            </div>
         </div>
 
-        <hr class="featurette-divider">
+        <div class="container mb-5" id="nasi-klienci">
+            <h2 class="text-center mb-5 featurette-heading">Nasi <span class="text-muted">klienci</span></h2>
+            <div class="customer-logos">
 
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">+ <span class="text-muted">2000 realizacji</span></h2>
-            <p class="lead">Reklamy, relacje filmowe, filmy szkoleniowe, prezentacje multimedialne, filmiki internetowe i inne. Baza najlepszych podwykonawców
-z kraju i zagranicy.</p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" src="assets/images/case2.jpg" alt="Generic placeholder image">
-          </div>
+                <div>
+                    <img src="assets/images/logos/astra.png">
+                </div>
+                <div>
+                    <img src="assets/images/logos/atmedia.png">
+                </div>
+                <div>
+                    <img src="assets/images/logos/fruittella.png">
+                </div>
+                <div>
+                    <img src="assets/images/logos/hachette.png">
+                </div>
+                <div>
+                    <img src="assets/images/logos/hasbro.png">
+                </div>
+                <div>
+                    <img src="assets/images/logos/kinder.png">
+                </div>
+                <div>
+                    <img src="assets/images/logos/kospel.png">
+                </div>
+                <div>
+                    <img src="assets/images/logos/msz.png">
+                </div>
+                <div>
+                    <img src="assets/images/logos/natalia.png">
+                </div>
+                <div>
+                    <img src="assets/images/logos/novotel.png">
+                </div>
+                <div>
+                    <img src="assets/images/logos/perfetti.png">
+                </div>
+                <div>
+                    <img src="assets/images/logos/plusssz.png">
+                </div>
+                <div>
+                    <img src="assets/images/logos/tvn.png">
+                </div>
+                <div>
+                    <img src="assets/images/logos/viacom.png">
+                </div>
+                <div>
+                    <img src="assets/images/logos/vibovit.png">
+                </div>
+                <div>
+                    <img src="assets/images/logos/furby.png">
+                </div>
+                <div>
+                    <img src="assets/images/logos/myscene.png">
+                </div>
+                <div>
+                    <img src="assets/images/logos/mattel.png">
+                </div>
+                <div>
+                    <img src="assets/images/logos/tmtoys.png">
+                </div>
+                <div>
+                    <img src="assets/images/logos/furby2.png">
+                </div>
+
+            </div>
+
+            <hr class="featurette-divider">
         </div>
 
-        <hr class="featurette-divider">
+        <div class="container">
 
-        <!-- /END THE FEATURETTES -->
+            <div class="row">
 
-      </div><!-- /.container -->
+                <div class="col-xs-12 col-xl-6">
+                    <blockquote>
+                        <p>Współpraca z Michałem Łojewskim oraz jego firmą Gynkar była zawsze pełna sukcesów, cechująca się elastycznością, ogromnym doświadczeniem i kreatywnością.</p>
 
+                        <p>Z tych powodów, zapytany przez wspólników Disneya o najlepszy kontakt do firmy produkującej filmy i potrafiącej zrobić „coś z niczego”, zawsze polecam Michała Łojewskiego i Firmę Gynkar.</p>
+                        <p>
+                            <strong>Artur Pacuła</strong>,
+                            <br/> Dyrektor ds. Marketingu i Komunikacji, The Walt Disney Company Polska</p>
+                    </blockquote>
+                    <hr class="featurette-divider d-xs-inline d-xl-none">
+                </div>
 
+                <div class="col-xs-12 col-xl-6">
+                    <blockquote>
+                        <p>Od samego początku naszej wieloletniej współpracy Michał Łojewski i jego firma Gynkar wykazywała kreatywne myślenie oraz innowacyjne podejście do każdego podjętego przez nich projektu.</p>
 
-
-
-
-
-      <div class="container mb-5">
-  <h2 class="text-center mb-5 featurette-heading">Klienci <span class="text-muted">o nas</span></h2>
-  <div class="customer-logos">
-
-          <div>
-            <img src="assets/images/logos/astra.png">
-          </div>
-          <div>
-            <img src="assets/images/logos/atmedia.png">
-          </div>
-          <div>
-            <img src="assets/images/logos/fruittella.png">
-          </div>
-          <div>
-            <img src="assets/images/logos/hachette.png">
-          </div>
-          <div>
-            <img src="assets/images/logos/hasbro.png">
-          </div>
-          <div>
-            <img src="assets/images/logos/kinder.png">
-          </div>
-          <div>
-            <img src="assets/images/logos/kospel.png">
-          </div>
-          <div>
-            <img src="assets/images/logos/msz.png">
-          </div>
-          <div>
-            <img src="assets/images/logos/natalia.png">
-          </div>
-          <div>
-            <img src="assets/images/logos/novotel.png">
-          </div>
-          <div>
-            <img src="assets/images/logos/perfetti.png">
-          </div>
-          <div>
-            <img src="assets/images/logos/plusssz.png">
-          </div>
-          <div>
-            <img src="assets/images/logos/tvn.png">
-          </div>
-          <div>
-            <img src="assets/images/logos/viacom.png">
-          </div>
-          <div>
-            <img src="assets/images/logos/vibovit.png">
-          </div>
-          <div>
-            <img src="assets/images/logos/furby.png">
-          </div>
-          <div>
-            <img src="assets/images/logos/myscene.png">
-          </div>
-          <div>
-            <img src="assets/images/logos/mattel.png">
-          </div>
-          <div>
-            <img src="assets/images/logos/tmtoys.png">
-          </div>
-          <div>
-            <img src="assets/images/logos/furby2.png">
-          </div>
-
-  </div>
-
-  <hr class="featurette-divider">
-</div>
-
-
-
-      <div class="container">
-
-  <div class="row">
-
-  <div class="col-12">
-    <blockquote>
-    <p>Współpraca z Michałem Łojewskim oraz jego firmą Gynkar była zawsze pełna sukcesów, cechująca się elastycznością, ogromnym doświadczeniem i kreatywnością.</p>
-
-<p>Z tych powodów, zapytany przez wspólników Disneya o najlepszy kontakt do firmy produkującej filmy i potrafiącej zrobić „coś z niczego”, zawsze polecam Michała Łojewskiego i Firmę Gynkar.</p>
-<p>
-<strong>Artur Pacuła</strong>,<br/>
-Dyrektor ds. Marketingu i Komunikacji, The Walt Disney Company Polska</p>
-  </blockquote>
-  <hr class="featurette-divider">
-  </div>
-
-  <div class="col-12">
-    <blockquote>
-      <p>Od samego początku naszej wieloletniej współpracy Michał Łojewski i jego firma Gynkar wykazywała kreatywne myślenie oraz innowacyjne podejście do każdego podjętego przez nich projektu.</p>
-
-<p>Godne uwagi są ich punktualność w dotrzymywaniu terminów, elastyczność oraz kreatywność. Dzięki tym zdolnościom, można na nich liczyć jako na partnera biznesowego. Z firmą Gynkar wykonanie projektów, nawet tych, które wydają się „niemożliwe”, staje się łatwe, szybkie i przyjemne.</p>
-<p>
-<strong>Jacek Skrodzki</strong>,<br/>
-Dyrektor Marketingu i Wsparcia Sprzedaży, AtMedia</p>
-    </blockquote>
-  </div>
-</div>
-<hr class="featurette-divider">
-</div>
-
-
-
-
-
-<div class="map-container google-map"><iframe frameborder="0" style="border:0; width:100%; height: 350px" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJn6wOs6lZwokRLKy1iqRcoKw" allowfullscreen=""></iframe></div>
-</main>
-
-<footer class="container py-5">
-      <div class="row text-center">
-        <div class="col-12 col-md">
-          <img src="assets/images/logo.png" />
-          <small class="d-block mb-3 text-muted">© 2017-2018</small>
+                        <p>Godne uwagi są ich punktualność w dotrzymywaniu terminów, elastyczność oraz kreatywność. Dzięki tym zdolnościom, można na nich liczyć jako na partnera biznesowego. Z firmą Gynkar wykonanie projektów, nawet tych, które wydają się „niemożliwe”, staje się łatwe, szybkie i przyjemne.</p>
+                        <p>
+                            <strong>Jacek Skrodzki</strong>,
+                            <br/> Dyrektor Marketingu i Wsparcia Sprzedaży, AtMedia</p>
+                    </blockquote>
+                </div>
+            </div>
+            <hr class="featurette-divider">
         </div>
-        <div class="col-6 col-md">
-          <h5>Biuro</h5>
-          <ul class="list-unstyled text-small">
-            <li>+48 22 851 10 65</li>
-            <li>ul. Chełmska 21, 00-724</li>
-            <li>Warszawa</li>
-          </ul>
+
+        <div class="map-container google-map" id="kontakt">
+            <h2 class="text-center mb-5 featurette-heading">Kon<span class="text-muted">takt</span></h2>
+
+            <iframe frameborder="0" style="border:0; width:100%; height: 350px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78250.11545899537!2d21.041269915381996!3d52.20130277975511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecd3bb43eacab%3A0xf815037eb9fa8e61!2sGynkar.+%C5%81ojewski+M.!5e0!3m2!1sen!2spl!4v1537278126253" allowfullscreen=""></iframe>
         </div>
-        <div class="col-6 col-md">
-          <h5>Michał Łojewski</h5>
-          <ul class="list-unstyled text-small">
-            <li>+48 606 257 257</li>
-            <li><a class="text-muted" href="mailto:michal@gynkar.pl">michal@gynkar.pl</a></li>
-          </ul>
+
+    </main>
+
+    <footer class="container py-5">
+        <div class="row text-center">
+            <div class="col-12 mb-5">
+                <img src="assets/images/logo.png" />
+                <a style="margin-left: 20px; margin-right: 10px;" target="_blank" href="https://www.facebook.com/gynkar.michal.lojewski/" class="btn btn-social-icon btn-facebook gs"><span class="fa fa-facebook"></span></a>
+                <a href="https://www.instagram.com/gynkar/" target="_blank" class="btn btn-social-icon btn-instagram gs"><span class="fa fa-instagram"></span></a>
+                <small class="d-block mb-3 text-muted">© 1998-2018</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Biuro</h5>
+                <ul class="list-unstyled text-small">
+                    <li>+48 22 851 10 65</li>
+                    <li>ul. Chełmska 21, 00-724</li>
+                    <li>Warszawa</li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Michał Łojewski</h5>
+                <ul class="list-unstyled text-small">
+                    <li>+48 606 257 257</li>
+                    <li><a href="mailto:michal@gynkar.pl">michal@gynkar.pl</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Katarzyna Brzezińska</h5>
+                <ul class="list-unstyled text-small">
+                    <li>+48 510 256 551</li>
+                    <li><a href="mailto:kasia@gynkar.pl">kasia@gynkar.pl</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Łukasz Gołębiewski</h5>
+                <ul class="list-unstyled text-small">
+                    <li>+48 798 966 952</li>
+                    <li><a href="mailto:lukasz@gynkar.pl">lukasz@gynkar.pl</a></li>
+                </ul>
+            </div>
+
         </div>
-        <div class="col-6 col-md">
-          <h5>Katarzyna Brzezińska</h5>
-          <ul class="list-unstyled text-small">
-            <li>+48 510 256 551</li>
-            <li><a class="text-muted" href="mailto:kasia@gynkar.pl">kasia@gynkar.pl</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Łukasz Gołębiewski</h5>
-          <ul class="list-unstyled text-small">
-            <li>+48 798 966 952</li>
-            <li><a class="text-muted" href="mailto:lukasz@gynkar.pl">lukasz@gynkar.pl</a></li>
-          </ul>
-        </div>
-      </div>
     </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js?v=3&amp;language=en&amp;sensor=false&amp;libraries=geometry"></script>
-    <script>
-      $(document).ready(function(){
-        $('.customer-logos').slick({
-          slidesToShow: 6,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 1000,
-          arrows: false,
-          dots: false,
-          pauseOnHover: false,
-          centerMode: true,
-          variableWidth: true,
-          responsive: [{
-            breakpoint: 1200,
-            settings: {
-              slidesToShow: 5
-            }
-          }, {
-            breakpoint: 992,
-            settings: {
-              slidesToShow: 4
-            }
-          }, {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 3
-            }
-          }, {
-            breakpoint: 576,
-            settings: {
-              slidesToShow: 2
-            }
-          }]
-        });
-      });
-    </script>
-  </body>
+    <noscript>
+      <style>body{ visibility: visible; } header, main, footer { display: none; }</style>
+      <h1><?= t('turn_on_javascript') ?></h1>
+    </noscript>
+</body>
+
 </html>

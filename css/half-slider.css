@@ -1,26 +1,12 @@
-/*!
- * Start Bootstrap - Half Slider (https://startbootstrap.com/template-overviews/half-slider)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-half-slider/blob/master/LICENSE)
- */
-
-#myCarousel .carousel-item {
-  height: 65vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
 
 body {
   padding-bottom: 3rem;
   color: #5a5a5a;
+}
+
+span.text-muted {
+  color: #5a5a5a!important;
 }
 
 nav ul li a.nav-link {
@@ -28,51 +14,14 @@ nav ul li a.nav-link {
   font-size: 0.9rem;
 }
 
+main img { box-shadow: 5px 5px 10px #999; }
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
 
-/* Carousel base class */
-#myCarousel.carousel {
-  margin-bottom: 4rem;
-}
-/* Since positioning the image, we need to help out the caption */
-#myCarousel .carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
+footer a {
+  color: #5a5a5a;
+  text-decoration: underline;
 }
 
-
-
-/* Declare heights because of positioning of img element */
-#myCarousel .carousel-item {
-  height: 32rem;
-  background-color: #777;
-}
-#myCarousel .carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
-}
-
-#myCarousel .carousel-caption p.text-light,
-#myCarousel .carousel-caption h1 {
-  background:rgba(0,0,0,0.4);
-  padding: 3px;
-}
-
-#myCarousel .carousel-caption h1 {
-  display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
@@ -85,33 +34,21 @@ nav ul li a.nav-link {
   margin-left: .75rem;
 }
 
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+p.lead {
+  margin-bottom: 50px;
 }
 
-/* Thin out the marketing headings */
+.featurette-divider {
+  margin: 5rem 0;
+}
+
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -.05rem;
 }
 
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
-  #myCarousel .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-
+@media (min-width: 50em) {
   .featurette-heading {
     font-size: 50px;
   }
@@ -119,17 +56,14 @@ nav ul li a.nav-link {
 
 @media (min-width: 62em) {
   .featurette-heading {
-    margin-top: 7rem;
+    margin-top: 4rem;
   }
 }
 
-/* blockquote */
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
 blockquote{
   font-size: 1.4em;
   width:60%;
-  margin:25px auto;
+  margin:0 auto;
   font-family:Open Sans;
   font-style:italic;
   color: #555555;
@@ -171,40 +105,15 @@ blockquote span{
   }
 }
 
-/* img */
+@media (min-width: 1140px) {
+  blockquote {
 
-main img { box-shadow: 5px 5px 10px #999; }
-
-/* video */
-
-.header {
-  position: relative;
-  background-color: black;
-  height: 35vh;
-  min-height: 35vh;
-  width: 100%;
-  overflow: hidden;
-
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
-
-  margin-bottom: 50px;
+    width: 90%;
+  }
 }
 
-.header video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+.header {
+  margin-bottom: 50px;
 }
 
 .header .container {
@@ -223,7 +132,10 @@ main img { box-shadow: 5px 5px 10px #999; }
   z-index: 1;
 }
 
-.header h1 {margin-top:75px;}
+.header h1 {
+  margin-top: 100px;
+  letter-spacing: 0.2rem;
+}
 
 @media (pointer: coarse) and (hover: none) {
   .header {
@@ -232,4 +144,78 @@ main img { box-shadow: 5px 5px 10px #999; }
   .header video {
     display: none;
   }
+}
+
+.video-container2 {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+
+  min-height: 200px;
+  max-height: 642px;
+  margin-top: 103px;
+}
+
+.video-container2 iframe,
+.video-container2 video,
+.video-container2 embed {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+  max-width: 1140px;
+  max-height: 642px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width : 1920px) {
+
+  .video-container2 {
+    max-height: 90vh;
+  }
+
+  .video-container2 iframe,
+  .video-container2 video,
+  .video-container2 embed {
+    max-width: unset;
+    max-height: 90vh;
+  }
+
+}
+
+.nav-icon {
+  margin-top: 3px;
+}
+
+.gs {
+  filter: grayscale(100%);
+}
+
+@media only screen and (min-width : 992px) {
+
+  .nav-icon-fb {
+    margin-right: 10px; margin-left: 30px;
+  }
+
+}
+
+@media (min-width: 852px){
+    .navbar-expand-custom {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .navbar-expand-custom .navbar-nav {
+        flex-direction: row;
+    }
+    .navbar-expand-custom .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+    .navbar-expand-custom .navbar-collapse {
+        display: flex!important;
+    }
+    .navbar-expand-custom .navbar-toggler {
+        display: none;
+    }
 }
