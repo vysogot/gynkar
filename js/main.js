@@ -33,8 +33,8 @@ $(document).ready(function() {
     });
 
     $('.module-slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         arrows: true,
         centerMode: true,
         variableWidth: true
@@ -68,7 +68,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $("#playlist").youtube_video({
-        playlist: 'PLncTFGctaqZupp4iNer4nKBqXCrhcszvC',
+        playlist: 'PL-VJZiEJVTvGvyI-F6TeIvAzaXtzZSkYp',
         channel: false,
         user: false,
         videos: false,
