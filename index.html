@@ -28,7 +28,7 @@
 
     <!-- Main Stylesheet -->
     <link href="css/slider_v4.css" rel="stylesheet">
-    <link href="css/style_v4.css" rel="stylesheet">
+    <link href="css/style_v5.css" rel="stylesheet">
 
     <!-- jQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -53,19 +53,57 @@
     <style>
         html { background: white url('css/ajax-loader.gif') center 10% no-repeat; }
         body { visibility: hidden; }
+        @media screen and (min-width: 500px){
+            .rwd-break { display: none; }
+        }
     </style>
 </head>
 
 <body id="home">
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm px-4 p-3 mb-3">
-            <a class="navbar-brand" href="#"><img src="assets/images/logo.png" /></a>
+        <!--<nav class="navbar navbar-dark navbar-expand-lg bg-success justify-content-between">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse dual-nav w-50 order-1 order-lg-0">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link pl-0" href="#">Home <span class="sr-only">Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="//codeply.com">Codeply</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+        <a class="navbar-brand mx-auto d-block text-center order-0 order-lg-1 w-25" href="#"><img src="assets/images/logo.png" /></a>
+        <div class="navbar-collapse collapse dual-nav w-50 order-2">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-twitter"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>-->
+
+        <nav class="navbar navbar-expand-xl navbar-light fixed-top bg-white shadow-sm px-4 p-3 mb-3 justify-content-between">
+            <div class="container-fluid">
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto pr-5">
+            <div class="navbar-collapse collapse dual-nav w-50 order-1 order-xl-0" id="navbarCollapse">
+                <ul class="navbar-nav ml-xl-5 pr-xl-5">
                     <li class="nav-item active">
                         <a class="nav-link js-scroll-trigger" href="#home">Home
                 <span class="sr-only">(current)</span>
@@ -77,19 +115,28 @@
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#nasze-produkcje">Nasze produkcje</a>
                     </li>
+                </ul>
+            </div>
+            <a class="navbar-brand mx-auto d-block text-center order-0 order-xl-1 w-25" href="#"><img src="assets/images/logo.png" /></a>
+            <div class="navbar-collapse collapse dual-nav w-50 order-2" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto pr-5">
 
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#nasi-klienci">Nasi klienci</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#opinie">Opinie</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#kontakt">Kontakt</a>
                     </li>
-                    <li class="nav-icon nav-icon-fb">
-                        <a href="https://www.facebook.com/gynkar.michal.lojewski/" target="_blank" class="btn btn-social-icon btn-sm btn-facebook gs" style="margin-right: 10px"><span class="fa fa-facebook"></span></a>
+                    <li class="nav-icon ml-0 ml-xl-3">
+                        <a href="https://www.facebook.com/gynkar.michal.lojewski/" target="_blank" class="btn btn-social-icon btn-sm btn-facebook gs mr-2"><span class="fa fa-facebook"></span></a>
                         <a href="https://www.instagram.com/gynkar/" target="_blank" class="btn btn-social-icon btn-sm btn-instagram gs"><span class="fa fa-instagram"></span></a>
                     </li>
                 </ul>
             </div>
+        </div>
         </nav>
     </header>
 
@@ -124,7 +171,7 @@
             <div class="row featurette text-center pr-lg-5 pl-lg-5">
 
                 <div class="col-12">
-                    <h2 class="featurette-heading" id="o-nas">Działamy od <span class="text-muted">ponad 20 lat</span></h2>
+                    <h2 class="featurette-heading" id="o-nas">Działamy od <br class="rwd-break" /><span class="text-muted">ponad 20 lat</span></h2>
                     <p class="lead p-5">
 
                         Pracujemy dla klientów polskich i zagranicznych. Prowadzimy usługi w zakresie produkcji filmowej oraz kompleksowej organizacji imprez. Reklamy, relacje filmowe, filmy szkoleniowe, prezentacje multimedialne, filmiki internetowe i inne. Baza najlepszych podwykonawców z kraju i zagranicy.</p>
@@ -227,7 +274,9 @@
 
         <div class="container-fluid">
 
+            <h2 id="opinie" class="text-center mb-5 featurette-heading">Opinie</h2>
             <div class="row">
+
 
                 <div class="col-xs-12 col-xl-4">
                     <blockquote>
@@ -236,7 +285,7 @@
                         <p>Z tych powodów, zapytany przez wspólników Disneya o najlepszy kontakt do firmy produkującej filmy i potrafiącej zrobić „coś z niczego”, zawsze polecam Michała Łojewskiego i Firmę Gynkar.</p>
                         <p>
                             <strong>Artur Pacuła</strong>,
-                            <br/> Dyrektor ds. Marketingu i Komunikacji, The Walt Disney Company Polska</p>
+                            <br/>Dyrektor ds. Marketingu i Komunikacji, The Walt Disney Company Polska</p>
                     </blockquote>
 
                 </div>
@@ -276,13 +325,20 @@
     </main>
 
     <footer class="container py-5">
-        <div class="row text-center">
-            <div class="col-12 mb-5">
+        <div class="row mb-5">
+            <div class="col-3 pt-3 text-right">
+                <a target="_blank" href="https://www.facebook.com/gynkar.michal.lojewski/" class="btn btn-social-icon btn-facebook gs"><span class="fa fa-facebook"></span></a>
+            </div>
+            <div class="col-6 text-center">
                 <img src="assets/images/logo.png" />
-                <a style="margin-left: 60px; margin-right: 40px;" target="_blank" href="https://www.facebook.com/gynkar.michal.lojewski/" class="btn btn-social-icon btn-facebook gs"><span class="fa fa-facebook"></span></a>
-                <a href="https://www.instagram.com/gynkar/" target="_blank" class="btn btn-social-icon btn-instagram gs"><span class="fa fa-instagram"></span></a>
                 <small class="d-block mb-3 text-muted">© 1998-2018</small>
             </div>
+            <div class="col-3 pt-3 text-left">
+                <a href="https://www.instagram.com/gynkar/" target="_blank" class="btn btn-social-icon btn-instagram gs"><span class="fa fa-instagram"></span></a>
+            </div>
+        </div>
+
+        <div class="row text-center">
             <div class="col-6 col-md">
                 <h5>Biuro</h5>
                 <ul class="list-unstyled text-small">
